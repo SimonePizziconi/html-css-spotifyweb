@@ -1,0 +1,95 @@
+/********* REGOLE CSS GENERALI *********/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+
+.container-flex{
+    display: flex;
+    height: calc(100vh - 80px);
+}
+
+
+/********* REGOLE CSS BARRA NAVIGAZIONE **********/
+
+nav{
+    /* DEBUG */
+    height: calc(100vh - 80px);
+    width: 380px;
+    background-color: #000;
+}
+
+#logo{
+    width: 80%;
+}
+
+.icon-nav{
+    width: 10%;
+    vertical-align: middle;
+}
+
+nav span{
+    display: inline-block;
+    color: #fff;
+}
+
+
+/*********** REGOLE CSS PARTE CENTRALE PAGINA ***********/
+
+
+/* Regole barra upgrade */
+
+#center-spotify{
+    width: 100%;
+    overflow-y: scroll;
+}
+
+#upgrade{
+    position: fixed;
+    z-index: 900;
+    /* DEBUG */
+    height: 80px;
+    width: 100%;
+    background-color: blue;
+}
+
+
+/* Regole album e playlist */
+
+#center-section{
+    padding-top: 80px;
+}
+
+#header-list ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    gap: 30px;
+}
+
+.album-playlist{
+    display: flex;
+    gap: 20px;
+}
+
+.album-card{
+    /* DEBUG */
+    height: 200px;
+    width: 200px;
+    background-color: aquamarine;
+}
+
+
+
+/************* REGOLE CSS BARRA RIPRODUZIONE ***************/
+
+#tool-bar{
+    width: 100%;
+    height: 80px;
+    background-color: blueviolet;
+}
