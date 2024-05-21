@@ -37,10 +37,6 @@ nav a:hover{
     color: #fff;
 }
 
-#padding-container{
-    padding: 20px 20px;
-}
-
 #logo{
     width: 80%;
     margin-bottom: 30px;
@@ -202,11 +198,14 @@ nav a{
     margin-top: 10px;
 }
 
+.playlist-title h3{
+    color: #fff;
+}
+
 .album-card{
     margin-top: 20px;
     width: calc(100% / 6 - 20px);
 }
-
 
 .img-album img{
     display: block;
@@ -272,6 +271,7 @@ nav a{
 .flex-tool{
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .tool-img img{
@@ -292,8 +292,23 @@ nav a{
     color: #fff;
 }
 
+.name-song a{
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.name-song a:hover{
+    color: #fff;
+    text-decoration: underline;
+}
+
 .icon-tool{
     padding: 0 30px;
+}
+
+.icon-tool i:hover{
+    color: #fff;
+    cursor: pointer;
 }
 
 .fa-folder{
@@ -314,6 +329,11 @@ nav a{
 
 .tool-riproduzione i{
     margin-right: 10px;
+    cursor: pointer;
+}
+
+.tool-riproduzione .fa-circle-play:hover{
+    transform: scale(1.2);
 }
 
 .container-bar{
@@ -327,11 +347,15 @@ nav a{
     font-size: 10px;
 }
 
-#progress-bar{
-    width: 500px;
-    height: 2px;
-    background-color: #76c7c0;
+.bar{
+    background-color: #606060;
     border-radius: 10px;
+    height: 4px;
+    cursor: pointer;
+}
+
+#time-bar{
+    width: 500px;
 }
 
 #audio{
@@ -344,9 +368,53 @@ nav a{
 
 #audio-bar{
     width: 100px;
-    height: 2px;
     margin: 0 10px;
-    background-color: #76c7c0;
-    border-radius: 10px;
 }
+
+.progress-bar{
+    height: 100%;
+    background-color: #d4d4d4;
+    width: 20%;
+    border-radius: 5px;
+    position: relative;
+}
+
+.progress-circle{
+    display: none;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #d4d4d4;
+    border-radius: 50%;
+    transform: translate(50%, -50%);
+}
+
+.bar:hover .progress-bar{
+    background-color: #b5ff31;
+}
+
+.bar:hover .progress-circle{
+    display: block;
+}
+
+/*************** dimensioni tablet ***************/
+
+@media screen and (min-width: 780px) and (max-width: 1300px) {
+    
+    .album-card{
+        width: calc(100% / 4 - 20px);
+    }
+}
+
+@media screen and (min-width: 450px) and (max-width: 779px){
+
+      .album-card{
+        width: calc(100% / 2 - 20px);
+    }
+
+
+}
+
 

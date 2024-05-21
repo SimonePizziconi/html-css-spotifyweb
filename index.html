@@ -246,12 +246,13 @@
     <!-- Barra comandi riproduzione -->
     <div id="tool-bar">
         <div class="flex-tool">
+            <!-- comandi preferiti e canzone -->
             <div class="tool-img">
                 <img src="img/sinister.jpeg" alt="">
             </div>
             <div class="name-song">
                 <h6>Sinister</h6>
-                <span>Brano Nome</span>
+                <a href="#">Brano Nome</a>
             </div>
             <div class="icon-tool">
                 <i class="fa-regular fa-heart"></i>
@@ -259,6 +260,7 @@
             </div>
         </div>
         <div class="flex-tool-column">
+            <!-- comandi riproduzione -->
             <div class="tool-riproduzione">
                 <i class="fa-solid fa-shuffle"></i>
                 <i class="fa-solid fa-backward-step"></i>
@@ -268,17 +270,26 @@
             </div>    
             <div class="container-bar">
                 <span>0:25</span>
-                <div id="progress-bar"></div>
+                <div class="bar" id="time-bar">
+                    <div class="progress-bar">
+                        <div class="progress-circle"></div> 
+                    </div>
+                </div>
                 <span>4:25</span>
             </div>
         </div>
         <div class="flex-tool">
+            <!-- Comandi audio -->
             <div id="audio">
                 <div class="container-bar">
                     <i class="fa-solid fa-bars"></i>
                     <i class="fa-solid fa-display"></i>
                     <i class="fa-solid fa-volume-high"></i>
-                    <div id="audio-bar"></div>
+                    <div class="bar" id="audio-bar">
+                        <div class="progress-bar">
+                            <div class="progress-circle"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
