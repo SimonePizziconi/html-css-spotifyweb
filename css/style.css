@@ -156,14 +156,12 @@ nav a{
     margin-right: 20px;
     padding: 8px 25px;
     border-radius: 20px;
-    transition: all 0.3s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 #upgrade a:hover{
     transform: scale(1.1); 
 }
-
-
 
 
 /* Regole album e playlist */
@@ -192,8 +190,6 @@ nav a{
     border-bottom: 3px solid #b5ff31;
 }
 
-
-
 #header-list a{
     text-decoration: none;
     font-weight: bold;
@@ -211,8 +207,33 @@ nav a{
     width: calc(100% / 6 - 20px);
 }
 
-.album-card img{
+
+.img-album img{
+    display: block;
     width: 100%;
+}
+
+.img-album{
+    position: relative;
+}
+
+.img-album i{
+    display: none;
+    font-size: 50px;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.album-card:hover{
+    filter: contrast(0.5);
+    cursor: pointer;
+}
+
+.album-card:hover i{
+    display: block;
 }
 
 .img-circle img{
