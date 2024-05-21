@@ -33,6 +33,7 @@
                 <img src="img/libreria.svg" alt="" class="icon-nav">
                 <a href="#">La tua libreria</a>
             </div>
+            <!-- Lista playlist -->
             <h6>PLAYLIST</h6>
             <a href="#">+</a> <span>Crea playlist</span>
             <ul>
@@ -75,6 +76,7 @@
 
             <!-- Album e playlist -->
             <section id="center-section">
+                <!-- Lista menu navigazione -->
                 <div id="header-list">
                     <ul>
                         <li>
@@ -190,23 +192,42 @@
 
     <!-- Barra comandi riproduzione -->
     <div id="tool-bar">
-        <div class="tool-img">
-            <img src="img/sinister.jpeg" alt="">
+        <div class="flex-tool">
+            <div class="tool-img">
+                <img src="img/sinister.jpeg" alt="">
+            </div>
+            <div class="name-song">
+                <h6>Sinister</h6>
+                <span>Brano Nome</span>
+            </div>
+            <div class="icon-tool">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-folder"></i>
+            </div>
         </div>
-        <div class="name-song">
-            <h6>Sinister</h6>
-            <span>Brano Nome</span>
+        <div class="flex-tool-column">
+            <div class="tool-riproduzione">
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-step"></i>
+                <i class="fa-regular fa-circle-play"></i>
+                <i class="fa-solid fa-forward-step"></i>
+                <i class="fa-solid fa-rotate-right"></i>
+            </div>    
+            <div class="container-bar">
+                <h6>0.25</h6>
+                <div id="progress-bar"></div>
+                <h6>0.25</h6>
+            </div>
         </div>
-        <div class="icon-tool">
-            <i class="fa-regular fa-heart"></i>
-            <i class="fa-regular fa-folder"></i>
-        </div>
-        <div class="">
-            <i class="fa-solid fa-shuffle"></i>
-            <i class="fa-solid fa-backward-step"></i>
-            <i class="fa-regular fa-circle-play"></i>
-            <i class="fa-solid fa-forward-step"></i>
-            <i class="fa-solid fa-rotate-right"></i>
+        <div class="flex-tool">
+            <div id="audio">
+                <div class="container-bar">
+                    <i class="fa-solid fa-bars"></i>
+                    <i class="fa-solid fa-display"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <div id="audio-bar"></div>
+                </div>
+            </div>
         </div>
     </div>
     
