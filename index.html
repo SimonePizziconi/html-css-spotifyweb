@@ -20,51 +20,61 @@
 
         <!-- Barra di navigazione -->
         <nav>
-            <img id="logo" src="img/logo.svg" alt="">
             <div>
-                <img class="icon-nav" src="img/home.svg" alt="">
-                <span>Home</span>
-            </div>    
-            <div>    
-                <img src="img/search.svg" alt="" class="icon-nav">
-                <span>Cerca</span>
+                <img id="logo" src="img/logo.svg" alt="">
+                <div id="border-active" class="tool-nav">
+                    <img class="icon-nav" src="img/home.svg" alt="">
+                    <a href="#">Home</a>
+                </div>    
+                <div class="tool-nav">    
+                    <img src="img/search.svg" alt="" class="icon-nav">
+                    <a href="#">Cerca</a>
+                </div>
+                <div class="tool-nav">
+                    <img src="img/libreria.svg" alt="" class="icon-nav">
+                    <a href="#">La tua libreria</a>
+                </div>
+                <!-- Lista playlist -->
+                <h6>PLAYLIST</h6>
+                <a id="plus" href="#"><i class="fa-solid fa-plus"></i> Crea playlist </a> 
+                <ul>
+                    <li>
+                        <a href="#">Nuova Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nuova Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nuova Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nuova Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nuova Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nuova Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nuova Playlist</a>
+                    </li>
+                    <li>
+                        <a href="#">Nuova Playlist</a>
+                    </li>
+                </ul>
             </div>
+
             <div>
-                <img src="img/libreria.svg" alt="" class="icon-nav">
-                <a href="#">La tua libreria</a>
+                <div id="download-app">
+                    <img src="img/download.svg" class="download-icon" alt="Downloaf">
+                    <a href="#">Installa App</a>
+                </div>
+                <div id="avatar">
+                    <img src="img/profile.svg" class="download-icon" alt="Avatar">
+                    <a href="#">John Doe</a>
+                </div>
             </div>
-            <!-- Lista playlist -->
-            <h6>PLAYLIST</h6>
-            <a href="#">+</a> <span>Crea playlist</span>
-            <ul>
-                <li>
-                    <a href="#">Nuova Playlist</a>
-                </li>
-                <li>
-                    <a href="#">Nuova Playlist</a>
-                </li>
-                <li>
-                    <a href="#">Nuova Playlist</a>
-                </li>
-                <li>
-                    <a href="#">Nuova Playlist</a>
-                </li>
-                <li>
-                    <a href="#">Nuova Playlist</a>
-                </li>
-                <li>
-                    <a href="#">Nuova Playlist</a>
-                </li>
-                <li>
-                    <a href="#">Nuova Playlist</a>
-                </li>
-                <li>
-                    <a href="#">Nuova Playlist</a>
-                </li>
-            </ul>
-
-
-            
         </nav>
 
         <!-- Parte principale pagina -->
@@ -79,7 +89,7 @@
                 <!-- Lista menu navigazione -->
                 <div id="header-list">
                     <ul>
-                        <li>
+                        <li id="bottom-active">
                             <a href="#">IN EVIDENZA</a>
                         </li>
                         <li>
@@ -99,10 +109,13 @@
                         </li>
                     </ul>
                 </div>
+                <!-- Nome Playlist -->
                 <div class="playlist-title">
                     <h3>Recently Played</h3>
                 </div>
+                <!-- Prima riga album -->
                 <div class="album-playlist">
+                    <!-- Album card -->
                     <div class="album-card">
                         <img src="img/metal_lifting.jpg" alt="Metal">
                         <div class="album-text">
@@ -110,6 +123,7 @@
                             <span>Subtitle</span>
                         </div>
                     </div>
+                    <!-- Album card -->
                     <div class="album-card">
                         <img src="img/stranger.jpeg" alt="stranger things">
                         <div class="album-text">
@@ -117,6 +131,7 @@
                             <span>Kyle Dixon & Michael Stein</span>
                         </div>
                     </div>
+                    <!-- Album card -->
                     <div class="album-card">
                         <img src="img/aquietplace.jpeg" alt="a quiet place">
                         <div class="album-text">
@@ -124,6 +139,7 @@
                             <span>Subtitle</span>
                         </div>
                     </div>
+                    <!-- Album card -->
                     <div class="album-card">
                         <img src="img/split.jpeg" alt="split">
                         <div class="album-text">
@@ -131,6 +147,7 @@
                             <span>Subtitle</span>
                         </div>
                     </div>
+                    <!-- Album card -->
                     <div class="album-card">
                         <img src="img/cure.jpeg" alt="Cure">
                         <div class="album-text">
@@ -138,6 +155,7 @@
                             <span>Subtitle</span>
                         </div>
                     </div>
+                    <!-- Album card -->
                     <div class="album-card">
                         <img src="img/sinister.jpeg" alt="sinister">
                         <div class="album-text">
@@ -146,17 +164,21 @@
                         </div>
                     </div>
                 </div>
+                <!-- Nome Playlist -->
                 <div class="playlist-title">
                     <h3>Creato per John Doe</h3>
                     <span>Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</span>
                 </div>
+                <!-- Seconda riga album -->
                 <div class="album-playlist">
+                    <!-- Album card -->
                     <div class="album-card">
                         <img src="img/radar.jpeg" alt="Daily mix">
                         <div class="album-text">
                             <h4>Release Radar</h4>
                         </div>
                     </div>
+                    <!-- Album card -->
                     <div class="album-card">
                         <img src="img/mixdaily.jpeg" alt="Daily mix">
                         <div class="album-text">
@@ -164,11 +186,14 @@
                         </div>
                     </div>
                 </div>
+                <!-- Nome playlist -->
                 <div class="playlist-title">
                     <h3>Artisti pi&ugrave; popolari</h3>
                     <span>Pi&ugrave; ascolti, pi&ugrave; accurati saranno i suggerimenti.</span>
                 </div>
+                <!-- Terza riga album -->
                 <div class="album-playlist">
+                    <!-- Album card -->
                     <div class="album-card">
                         <div class="img-circle">
                             <img src="img/youg.jpeg" alt="Lana del rey">
@@ -177,6 +202,7 @@
                             <h4>Lana Del Rey</h4>
                         </div>
                     </div>
+                    <!-- Album card -->
                     <div class="album-card">
                         <div class="img-circle">
                             <img src="img/einaudi.jpeg" alt="Ludovico Einaudi">
@@ -214,9 +240,9 @@
                 <i class="fa-solid fa-rotate-right"></i>
             </div>    
             <div class="container-bar">
-                <h6>0.25</h6>
+                <span>0:25</span>
                 <div id="progress-bar"></div>
-                <h6>0.25</h6>
+                <span>4:25</span>
             </div>
         </div>
         <div class="flex-tool">
