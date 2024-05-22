@@ -291,7 +291,6 @@ nav a{
     width: 100%;
     height: 80px;
     background-color: #282828;
-    overflow-x: auto;
 }
 
 .flex-tool{
@@ -330,6 +329,7 @@ nav a{
 
 .icon-tool{
     padding: 0 30px;
+    font-size: 20px;
 }
 
 .icon-tool i:hover{
@@ -400,7 +400,7 @@ nav a{
 .progress-bar{
     height: 100%;
     background-color: #d4d4d4;
-    width: 20%;
+    width: 30%;
     border-radius: 5px;
     position: relative;
 }
@@ -432,9 +432,26 @@ nav a{
     .album-card{
         width: calc(100% / 4 - 20px);
     }
+
+    #audio-bar{
+        width: 50px;
+    }
+
+    #time-bar{
+        width: 200px;
+    }
+
+    .icon-tool{
+        padding: 0 15px;
+        font-size: 15px;
+    }
+
+    .tool-riproduzione{
+        font-size: 20px;
+    }
 }
 
-@media screen and (min-width: 450px) and (max-width: 779px) {
+@media screen and (max-width: 779px) {
 
     nav{
         display: none;
@@ -452,8 +469,37 @@ nav a{
         width: calc(100% - 50px);
     }
 
-      .album-card{
+    .album-card{
         width: calc(100% / 2 - 20px);
+    }
+
+    .name-song{
+        margin-right: 10px;
+    }
+
+    .tool-img img{
+        width: 50%;
+    }
+
+    #audio-bar{
+        width: 30px;
+    }
+
+    #time-bar{
+        width: 100px;
+    }
+
+    .icon-tool{
+        padding: 0 5px;
+        font-size: 10px;
+    }
+
+    .tool-riproduzione{
+        font-size: 15px;
+    }
+
+    .container-bar{
+        gap: 5px;
     }
 
 }

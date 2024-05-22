@@ -17,8 +17,7 @@
 <body>
 
     <div class="container-flex">
-
-        <!-- Barra di navigazione -->
+        <!-- Barra di navigazione mobile -->
         <div class="nav-mobile">
             <div class="nav-container">
                 <img src="img/logo-small.svg" alt="Spotify">               
@@ -31,6 +30,7 @@
                 <img src="img/profile.svg" alt="Avatar">
             </div>
         </div>
+        <!-- Barra di navigazione -->
         <nav>
             <div>
                 <img id="logo" src="img/logo.svg" alt="Spotify">
@@ -93,7 +93,7 @@
         <div id="center-spotify">
             <!-- Barra upgrade -->
             <section id="upgrade">
-                    <a href="#">Effettua l'upgrade</a>
+                <a href="#">Effettua l'upgrade</a>
             </section>
 
             <!-- Album e playlist -->
@@ -294,9 +294,11 @@
             <!-- Comandi audio -->
             <div id="audio">
                 <div class="container-bar">
-                    <i class="fa-solid fa-bars"></i>
-                    <i class="fa-solid fa-display"></i>
-                    <i class="fa-solid fa-volume-high"></i>
+                    <div class="icon-tool">
+                        <i class="fa-solid fa-bars"></i>
+                        <i class="fa-solid fa-display"></i>
+                        <i class="fa-solid fa-volume-high"></i>
+                    </div>    
                     <div class="bar" id="audio-bar">
                         <div class="progress-bar">
                             <div class="progress-circle"></div>
